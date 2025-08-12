@@ -1,93 +1,35 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>Hayatın Sırları Konferansı</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(to right, #e0f7fa, #e1bee7);
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            min-height: 100vh;
-        }
-
-        .container {
-            background-color: #ffffffcc;
-            margin-top: 60px;
-            padding: 40px;
-            border-radius: 15px;
-            max-width: 600px;
-            width: 90%;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        h1 {
-            color: #6a1b9a;
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            color: #00796b;
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
-
-        p {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-
-        .buttons {
-            margin-top: 40px;
-        }
-
-        .yes-btn {
-            background-color: #4caf50;
-            color: white;
-            font-size: 20px;
-            padding: 15px 35px;
-            border: none;
-            border-radius: 10px;
-            margin: 10px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .yes-btn:hover {
-            background-color: #388e3c;
-        }
-
-        .no-btn {
-            background-color: #e57373;
-            color: white;
-            font-size: 14px;
-            padding: 8px 20px;
-            border: none;
-            border-radius: 8px;
-            margin: 10px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mesaj</title>
+  <style>
+    html,body{
+      height:100%;
+      margin:0;
+    }
+    body{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#fff;
+    }
+    .msg{
+      color:#c62828;            /* koyu kırmızı */
+      font-weight:700;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      font-size:10vw;          /* responsive büyük yazı */
+      text-align:center;
+      padding:2vw;
+      line-height:1;
+    }
+    @media(min-width:800px){
+      .msg{ font-size:80px; }  /* büyük ekranlarda sabit boyut */
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Hayatın Sırları ve Mutluluğun Formülü Konferansı</h1>
-        <h2>Programımız için kalan son biletimiz tarafınıza ayrılmıştır.</h2>
-        <p>Hayatın gerçek potansiyelini keşfetmek ve içsel huzuru bulmak için bu eşsiz fırsatı kaçırmayın.</p>
-        <p>Alanında uzman konuşmacılar ( Sadece ben :D ), ilham verici sunumlar ( Yalan )ve interaktif atölye çalışmaları ( Alakası bile yok ) ile dolu bir gün sizi bekliyor.</p>
-        <p>Hemen yerinizi ayırtın ve hayatınızı değiştirecek bu deneyime ortak olun!</p>
-        <div class="buttons">
-            <button class="yes-btn">Evet, Katılmak İstiyorum!</button>
-            <button class="no-btn">Hayır, Teşekkürler</button>
-        </div>
-    </div>
+  <div class="msg">Sen bir korkaksın</div>
 </body>
 </html>
